@@ -93,7 +93,7 @@ Needs more training and fine-tuning to get better accuracy
 
 Things to improve later:
 
-Try using a model that's already trained (so I don’t have to start from scratch),
+I should try using a model that's already trained (so I don’t have to start from scratch),
 
 Test out models that work directly with raw audio, like RawNet2,
 
