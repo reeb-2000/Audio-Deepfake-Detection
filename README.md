@@ -6,17 +6,20 @@ This section breaks down three promising ways to spot audio deepfakes, focusing 
 1. RawNet2
 What makes it stand out:
 It’s an end-to-end model that learns straight from raw audio waveforms. So unlike older methods, we don’t have to extract features like MFCCs manually—it just learns what it needs on its own.
+
 How it performs:
 Achieved an Equal Error Rate (EER) of 1.85% on the ASVspoof2019 LA dataset.
+
 Why it’s worth looking into:
 No need for handcrafted features
 Handles a wide range of real-world audio inputs
 Could be adapted for real-time use
+
 Limitations:
 Needs a lot of data to train effectively
 Slightly heavy model, so it might need a bit of tuning to work smoothly.
 
-2. LCNN (Lightweight CNN)
+3. LCNN (Lightweight CNN)
 What makes it stand out:
 It uses something called max-feature-map activations, which help highlight the most important parts of the audio signal. It works well with features like MFCCs or CQCCs.
 How it performs:
@@ -28,7 +31,7 @@ Limitations:
 Relies a lot on preprocessed features
 Might need a bit of fine-tuning to spot the trickier deepfakes.
 
-3. Spectrogram-Based CNN (Our Implementation)
+4. Spectrogram-Based CNN (Our Implementation)
 What makes it stand out:
 We convert the audio into Log-Mel spectrograms and feed those into a CNN to classify real vs. fake speech. It’s simple and gets the job done.
 How it performs:
