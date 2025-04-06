@@ -12,8 +12,8 @@ How it performs:
 Achieved an Equal Error Rate (EER) of 1.85% on the ASVspoof2019 LA dataset.
 
 Why it’s worth looking into:
-No need for handcrafted features
-Handles a wide range of real-world audio inputs
+No need for handcrafted features,
+Handles a wide range of real-world audio inputs,
 Could be adapted for real-time use
 
 Limitations:
