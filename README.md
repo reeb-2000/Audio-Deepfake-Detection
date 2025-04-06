@@ -67,3 +67,29 @@ I resized all the spectrograms to a fixed shape (128x400) so the model wouldn’
 
 Stuff I assumed:
 I went with the idea that mel-spectrograms are good enough to represent speech and catch deepfake patterns. Also assumed that the real vs fake labels in the dataset were accurate enough for this kind of experiment. And yeah that a basic CNN could learn some useful stuff without needing a super complex setup.
+
+Analysis
+
+Why I picked this model:
+I went with a simple CNN using mel-spectrograms mainly because it was easier to get started with and didn’t need heavy compute. Since I’m still learning this stuff, I thought it made sense to start with something basic and build from there. It also kind of fits the idea of detecting deepfake speech in real-time. Plus I was curious to see how visual features from audio would work.
+
+How it works (high-level):
+Each audio file gets converted into a mel-spectrogram — basically a 2D image showing frequency over time. The CNN then tries to learn patterns in these spectrograms to figure out if the speech is real or fake. It's like teaching the model to look at audio.
+
+Performance results:
+After 10 epochs of training, I got a validation accuracy of around 84.62%, which I think is pretty solid for a simple setup without much tuning.
+
+Strengths:
+Quick to train
+
+Easy to understand what's going on
+
+Doesn’t need a huge dataset to start getting results
+
+Weaknesses:
+
+Might not work as well on real-life conversations
+
+If the fake audio is too good, the spectrogram might miss it
+
+Needs more training and fine-tuning to get better accuracy
