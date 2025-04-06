@@ -52,3 +52,18 @@ Works well for distinguishing real from synthetic audio clips
 Limitations:
 The results depend a lot on how we set the spectrogram parameters,
 May not generalize well across every kind of AI-generated voice
+
+## Part 2: Implementation (Please Check code)
+
+## Part 3: Documentation and Analysis
+
+Implementation Process
+
+Challenges I faced:
+The main issue was figuring out how to get the audio into a format that a CNN can actually use. I started with raw audio, but then had to convert it into mel-spectrograms. That’s when I got a shape mismatch error, the audio files were all different lengths, and stacking them just didn’t work. Training also gave me a few problems, especially when the model didn’t like the input shapes or ran into memory issues.
+
+How I fixed it:
+I resized all the spectrograms to a fixed shape (128x400) so the model wouldn’t complain. Added padding where needed and normalized the inputs to keep things clean. For training I kept the model architecture simple and tweaked the batch size to make it easier on my system.
+
+Stuff I assumed:
+I went with the idea that mel-spectrograms are good enough to represent speech and catch deepfake patterns. Also assumed that the real vs fake labels in the dataset were accurate enough for this kind of experiment. And yeah that a basic CNN could learn some useful stuff without needing a super complex setup.
