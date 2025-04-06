@@ -103,14 +103,15 @@ Mix the spectrogram features with some info about the speaker or voice to make i
 
 
 ## Setup Instructions
-1. Clone the repo:  
-   `git clone https://github.com/yourusername/your-repo-name`
+1. **Clone the repo** :  
+   git clone https://github.com/reeb-2000/Audio-Deepfake-Detection.git cd Audio-Deepfake-Detection
 
-2. Install dependencies:  
-   `pip install -r requirements.txt`
+2. **Install dependencies** :
+   pip install -r requirements.txt
 
-3. Run the notebook or script in any Jupyter environment.
-   
-Note: You may need to download the dataset manually if not included.
+3. **Get the dataset**
+You can download the dataset used in this project from [Kaggle - Fake or Real Speech Dataset](https://www.kaggle.com/datasets/umangpathak/fake-vs-real-speech).  
+After downloading, unzip it and place the folder inside this repo.  
 
-
+4. **Run the notebook**
+Open the Jupyter notebook and run it cell by cell:
