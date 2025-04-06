@@ -1,6 +1,6 @@
 # Audio-Deepfake-Detection
-Detecting AI-generated speech using CNNs and mel-spectrogram features.
 Research & Model Selection
+
 This section breaks down three promising ways to spot audio deepfakes, focusing on how technically strong they are, whether they can work in real time and how useful they are for catching AI-generated speech in actual conversations.
 
 1. RawNet2
