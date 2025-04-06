@@ -17,8 +17,8 @@ Handles a wide range of real-world audio inputs
 Could be adapted for real-time use
 
 Limitations:
-Needs a lot of data to train effectively
-Slightly heavy model, so it might need a bit of tuning to work smoothly.
+Needs a lot of data to train effectively,
+slightly heavy model, so it might need a bit of tuning to work smoothly.
 
 3. LCNN (Lightweight CNN)
    
@@ -29,11 +29,11 @@ How it performs:
 Reported an EER of 2.7% on ASVspoof benchmark datasets.
 
 Why it’s worth looking into:
-Fast and lightweight ,good option for near real-time scenarios
+Fast and lightweight ,good option for near real-time scenarios,
 Performs well even when audio is short or noisy
 
 Limitations:
-Relies a lot on preprocessed features
+Relies a lot on preprocessed features,
 Might need a bit of fine-tuning to spot the trickier deepfakes.
 
 5. Spectrogram-Based CNN (Our Implementation)
@@ -45,10 +45,10 @@ How it performs:
 In our own experiments, we got a validation accuracy of 84.62%.
 
 Why it’s worth looking into:
-Straightforward, easy to understand and implement
-Quick to train and deploy
+Straightforward, easy to understand and implement,
+Quick to train and deploy,
 Works well for distinguishing real from synthetic audio clips
 
 Limitations:
-The results depend a lot on how we set the spectrogram parameters
+The results depend a lot on how we set the spectrogram parameters,
 May not generalize well across every kind of AI-generated voice
