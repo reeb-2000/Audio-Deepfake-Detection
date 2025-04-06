@@ -5,7 +5,7 @@ This section breaks down three promising ways to spot audio deepfakes, focusing 
 
 1. RawNet2
 What makes it stand out:
-It’s an end-to-end model that learns straight from raw audio waveforms. So unlike older methods, we don’t have to extract features like MFCCs manually—it just learns what it needs on its own.
+It’s an end to end model that learns straight from raw audio waveforms. So unlike older methods, we don’t have to extract features like MFCCs manually—it just learns what it needs on its own.
 
 How it performs:
 Achieved an Equal Error Rate (EER) of 1.85% on the ASVspoof2019 LA dataset.
