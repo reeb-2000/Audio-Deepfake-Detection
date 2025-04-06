@@ -36,7 +36,7 @@ Limitations:
 Relies a lot on preprocessed features,
 Might need a bit of fine-tuning to spot the trickier deepfakes.
 
-5. Spectrogram-Based CNN (Our Implementation)
+5. Spectrogram-Based CNN (My Implementation)
    
 What makes it stand out:
 We convert the audio into Log-Mel spectrograms and feed those into a CNN to classify real vs. fake speech. It’s simple and gets the job done.
