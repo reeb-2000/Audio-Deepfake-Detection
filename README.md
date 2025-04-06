@@ -93,3 +93,13 @@ Might not work as well on real-life conversations
 If the fake audio is too good, the spectrogram might miss it
 
 Needs more training and fine-tuning to get better accuracy
+
+Things to improve later:
+Try using a model that's already trained (so I don’t have to start from scratch)
+
+Test out models that work directly with raw audio, like RawNet2
+
+Add more audio files or try tricks like changing pitch or adding background noise to make the model better
+
+Mix the spectrogram features with some info about the speaker or voice to make it smarter
+
