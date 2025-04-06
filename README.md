@@ -81,10 +81,15 @@ After 10 epochs of training, I got a validation accuracy of around 84.62%, which
 
 Strengths:
 Quick to train
+
 Easy to understand what's going on
+
 Doesn’t need a huge dataset to start getting results
+
 
 Weaknesses:
 Might not work as well on real-life conversations
+
 If the fake audio is too good, the spectrogram might miss it
+
 Needs more training and fine-tuning to get better accuracy
