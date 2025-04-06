@@ -20,7 +20,7 @@ Limitations:
 Needs a lot of data to train effectively,
 slightly heavy model, so it might need a bit of tuning to work smoothly.
 
-3. LCNN (Lightweight CNN)
+2. LCNN (Lightweight CNN)
    
 What makes it stand out:
 It uses something called max-feature-map activations, which help highlight the most important parts of the audio signal. It works well with features like MFCCs or CQCCs.
@@ -36,7 +36,7 @@ Limitations:
 Relies a lot on preprocessed features,
 Might need a bit of fine-tuning to spot the trickier deepfakes.
 
-5. Spectrogram-Based CNN (My Implementation)
+3. Spectrogram-Based CNN (My Implementation)
    
 What makes it stand out:
 We convert the audio into Log-Mel spectrograms and feed those into a CNN to classify real vs. fake speech. It’s simple and gets the job done.
